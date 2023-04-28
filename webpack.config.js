@@ -4,6 +4,9 @@ module.exports = {
     path: __dirname + '/public_html',
     filename: 'bundle.js'
   },
+  resolve: {
+    symlinks: true
+  },
   module: {
     rules: [{
       test: /\.m?js$/,

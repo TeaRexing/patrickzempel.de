@@ -1,2 +1,1 @@
-// simple loggin function
-export const logToConsole = msg => console.log(msg);
+/home/patrick/Work/patrickzempel/Web/Boilerplate/pzjs/_modules.js
