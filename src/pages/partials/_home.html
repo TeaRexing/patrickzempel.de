@@ -1,0 +1,33 @@
+<div class="w3-container w3-show" id="home">
+  <div class="w3-center w3-margin-top-144">
+    <!-- potrait -->
+    <img class="w3-image w3-circle w3-greyscale-min w3-hover-greyscale w3-animate-opacity" id="hero-image" alt="{{ site.title }}" src="{{ potrait }}"
+      style="max-width: 200px;">
+    <!-- name & title -->
+    <div class="w3-section">
+      <h1 class="w3-margin-none w3-responsive-48 w3-bolder" style="color: #333;">{{ site.authors[0].name }}</h1>
+    </div>
+    <!-- job title -->
+    <div class="w3-section">
+      <h4 class="w3-margin-none w3-responsive-24">SOFTWARE ENGINEER</h4>
+    </div>
+    <hr class="w3-border-transparent"><!-- invisible vertical spacer -->
+    <!-- socials & contact -->
+    <div class="w3-section">
+      <!-- socials -->
+      <each loop="value, key in site.socials">
+        <a href="{{ value }}" target="_blank"><i class="lab la-{{ key }} w3-responsive-48 w3-margin-8 navbar-link"></i></a>
+      </each>
+      <!-- mail -->
+        <a href="mailto:{{ site.mail }}" target="_blank"><i class="las la-envelope w3-responsive-48 w3-margin-8 navbar-link"></i></a>
+      <!-- phone -->
+        <a href="phone:{{ site.phone }}"><i class="las la-phone w3-responsive-48 w3-margin-8 navbar-link"></i></a>
+    </div>
+  </div>
+</div>
+<div id="hero-modal" class="w3-modal w3-black">
+    <span class="w3-button w3-xxlarge w3-black w3-display-topright" title="Close Modal Image"><i class="las la-times-circle"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img class="w3-image" src="{{ potrait }}">
+  </div>
+</div>

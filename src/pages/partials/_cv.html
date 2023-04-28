@@ -1,0 +1,24 @@
+<div class="w3-content w3-animate-left" id="cv">
+  <div class="w3-container">
+    <h1 class="w3-margin-top-72">LEBENSLAUF</h1>
+    <div class="timeline">
+      <ul>
+        <each loop="section in sections">
+          <div class="w3-section">
+            <h1 class="w3-badge w3-round w3-xlarge">{{ section.title }}</h1>
+            <each loop="subsection in section.subsections">
+              <li>
+                <span>{{ subsection.date }}</span>
+                <h3 class="w3-margin-none">{{ subsection.title }}</h3>
+                <h5 class="w3-lighter w3-small w3-margin-8">{{ subsection.subtitle }}</h5>
+                <each loop="line in subsection.description">
+                  <p class="w3-margin-none">{{ line }}</p>
+                </each>
+              </li>
+            </each>
+          </div>
+        </each>
+      </ul>
+    </div>
+  </div>
+</div>

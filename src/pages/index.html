@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <module href="/_meta.html">
+    <title>{{ site.title }}</title>
+  </module>
+</head>
+
+<body style="background-color: #fafafa;">
+  <module href="/_navbar.html" locals='{
+      "links": [
+      {
+        "name": "ABOUT",
+        "url": "#about"
+      },
+      {
+        "name": "CV",
+        "url": "#cv"
+      },
+      {
+        "name": "KONTAKT",
+        "url": "#contact"
+      }
+      ]
+      }'>
+  </module>
+  <module href="/_home.html" locals='{
+      "potrait": "potrait.jpg",
+      "jobtitle": "(B. Eng.)"
+      }'>
+  </module>
+  <module href="/_about.html" locals='{
+      "skills": {
+        "DevOps": ["Docker", "docker-compose", "Portainer", "Git"],
+        "Backend": ["PHP", "SQL", "Node.js", "OpenCascade Core"],
+        "Frontend": ["HTML5", "LESS", "SASS", "CSS", "JS", "jQuery", "Qt5"],
+        "Programmierung": ["C/C++", "Fortran", "LaTex/Tex"]
+      }
+      }'>
+  </module>
+  <module href="/_cv.html" locals='{
+      "sections": [
+        {
+          "title": "AUSBILDUNG",
+          "subsections": [
+            {
+              "date": "Mär. 2013 - Feb. 2021",
+              "title": "Hochschule Hannover",
+              "subtitle": "B. ENG. - MASCHINENBAU-INFORMATIK",
+              "description": ["Note: gut (2,0)"]
+            },
+            {
+              "date": "Aug. 2004 - Jul. 2012",
+              "title": "Gymnasium Langenhagen",
+              "subtitle": "ABITUR",
+              "description": ["Note: sehr gut (1,4)"]
+            }
+          ]
+        },
+        {
+          "title": "ERFAHRUNG",
+          "subsections": [
+            {
+              "date": "Nov. 2020 - dato",
+              "title": "patrickzempel.de",
+              "subtitle": "SELBSTSTÄNDIGKEIT WEB-ENTWICKLUNG",
+              "description": [
+                "Kundenberatung bzgl. IT-Infrastruktur, Hosting und SEO",
+                "Kundennahe Erstellung von Web-Designs",
+                "Development und Deployment von statischem/dynamischem Web-Content"
+              ]
+            },
+            {
+              "date": "Mär. 2019 - Feb. 2023",
+              "title": "pcae GmbH",
+              "subtitle": "SOFTWARE-ENTWICKLUNG (WERKSTUDENT)",
+              "description": [
+                "Entwicklung von 3D-Visualisierungen mittel Qt5 und OpenCascade",
+                "Implementierung eines Subversion-Systems (Git)",
+                "Implementierung von Doxygen zur Quelldokumentation",
+                "Workflow-Optimierung zur Erstellung der Kundendokumentation unter Zuhilfenahme von npm-Scripts"
+              ]
+            },
+            {
+              "date": "Feb. 2013 - Sep. 2018",
+              "title": "JERO Productions (dbFakt GmbH)",
+              "subtitle": "ENTWICKLUNG, PRODUKTION UND VERKAUF",
+              "description": [
+                "Planung, Entwicklung und Produktion von Befüllwerkzeugen",
+                "Bearbeitung verschiedenster Kunststoffe und Metallen mittels Laser und CNC-Fräse",
+                "Erzeugung von CAD-Zeichnungen"
+              ]
+            },
+            {
+              "date": "Nov. 2012 - Jan. 2013",
+              "title": "JERO Productions (dbFakt GmbH)",
+              "subtitle": "PRAKTIKUM",
+              "description": [
+                "Planung, Entwicklung und Produktion von Befüllwerkzeugen",
+                "Bearbeitung verschiedenster Kunststoffe und Metallen mittels Laser und CNC-Fräse",
+                "Erzeugung von CAD-Zeichnungen"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "EHRENAMT",
+          "subsections": [
+            {
+              "date": "Jul. 2017 - Jul. 2018",
+              "title": "Bundesvereinigung Logistik (BVL) e.V.",
+              "subtitle": "STUDENTISCHER SPRECHER DER BVL-REGIONALGRUPPE NIEDERSACHSEN",
+              "description": [
+                "Planung und Durchführung von Veranstaltungen",
+                "Akquise von Veranstaltungspartnern"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "AUSZEICHNUNGEN",
+          "subsections": [
+            {
+              "date": "2008",
+              "title": "Weltmeistertitel - Primary Dance League",
+              "subtitle": "12. ROBOCUP WELTMEISTERSCHAFT (SUZHOU, CHINA)",
+              "description": []
+            },
+            {
+              "date": "2009",
+              "title": "Ehrenbürger der Stadt Langenhagen",
+              "subtitle": "EINTRAGUNG INS \"GOLDENE BUCH\" DER STADT LANGENHAGEN",
+              "description": []
+            }
+           ]
+        },
+        {
+          "title": "ZERTIFIKATE",
+          "subsections": [
+            {
+              "date": "2016",
+              "title": "Basiszertifikat im Projektmanagement (GPM)",
+              "subtitle": "PM-ZERT (ZERTIFIZIERUNGSSTELL DER GPM DEUTSCHE GESELLSCHAFT FÜR PROJEKTMANAGEMENT e.V.)",
+              "description": []
+            }
+           ]
+        }
+      ]
+      }'>
+  </module>
+  <module href="/_contact.html" locals='{}'>
+  </module>
+  <module href="/_footer.html" locals='{
+      "links": [
+      {
+        "name": "IMPRESSUM",
+        "url": "/impressum.html"
+      },
+      {
+        "name": "DATENSCHUTZ",
+        "url": "/datenschutz.html"
+      }
+      ]
+      }'>
+  </module>
+  <script src="/bundle.js"></script>
+  <module href="/_cookie.html" locals='{}'>
+  </module>
+</body>
+
+</html>

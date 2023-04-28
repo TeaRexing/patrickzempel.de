@@ -1,0 +1,40 @@
+{
+  "input": "./src/pages/*.html",
+  "output": "./public_html",
+  "plugins": {
+    "posthtml-modules": {
+      "root": "./src/pages/partials/",
+      "initial": true,
+      "attributesAsLocals": true,
+      "locals": {
+        "site": {
+          "title": "Patrick Zempel",
+          "description": "Software-Engineer/Web-Developer aus Hannover!",
+          "type": "Website",
+          "year": "2023",
+          "keywords": "software-engineering, web-development, web, software, hannover, patrick zempel, patrick, zempel, it, it solutions",
+          "url_short": "patrickzempel.de",
+          "url": "https://patrickzempel.de",
+          "mail": "info@patrickzempel.de",
+          "phone": "+49 1734 285 255",
+          "authors": [
+            {
+              "name": "Patrick Zempel",
+              "jobtitle": "(B. Eng.)",
+              "socials": {
+                "xing": "https://www.xing.com/profile/Patrick_Zempel/cv",
+                "github": "https://github.com/TeaRexing"
+              }
+            }
+          ],
+          "socials": {
+            "xing": "https://www.xing.com/profile/Patrick_Zempel/cv",
+            "github": "https://github.com/TeaRexing"
+          }
+        }
+      }
+    },
+    "posthtml-lorem": {},
+    "htmlnano": {}
+  }
+}

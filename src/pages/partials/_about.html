@@ -1,0 +1,45 @@
+<div class="w3-content w3-animate-right" id="about">
+  <!-- about me -->
+  <div class="w3-container w3-margin-top-72">
+    <h1 class="w3-right-align">ABOUT ME</h1>
+    <div class="w3-panel w3-rightbar w3-light-grey">
+      <p class="w3-right-align w3-responsive-24">
+        <strong>Gradatim Ferociter</strong>
+        -
+        <i class="w3-serif">„Step by Step, Ferociously"</i>
+      </p>
+    </div>
+    <p class="">
+      Als Software-Entwickler ist meine Leidenschaft das Schreiben von Code, um innovative und leistungsfähige
+      Anwendungen zu erstellen, die die Bedürfnisse der Nutzer erfüllen. Meine Fähigkeit, komplexe Probleme zu lösen und
+      effektive Lösungen zu finden, zeichnet mich aus. Ich habe umfangreiche Erfahrung in der Entwicklung von
+      Softwarelösungen für verschiedene Branchen, darunter Web-Entwicklung und (Bau-)Ingenieurwesen.
+    </p>
+    <p class="">
+      Ich habe ein tiefes Verständnis für Programmiersprachen wie C/C++, verschiedener Web-Stacks
+      und ich
+      bin immer auf der Suche nach neuen Technologien und Tools, um meine Fähigkeiten zu erweitern.
+    <p class="">
+      Ich schätze die Bedeutung von gutem Code-Design und Testbarkeit und arbeite hart daran, Code zu schreiben, der
+      leicht zu warten und zu erweitern ist. Ich bin ein Teamplayer und arbeite gerne in einem Umfeld, das
+      Zusammenarbeit und Ideenaustausch fördert.
+    </p>
+    <p class="">
+      In meiner Freizeit liebe ich es, handwerklich zu arbeiten und beschäftige mich mit allem von Holzarbeiten und Mikro-Elektronik bis zur
+      Restaurierung von Motorrädern. Im Sommer findet man mich auf dem Wasser beim Windsurfen.
+    </p>
+    <h1 class="w3-right-align">FÄHIGKEITEN</h1>
+    <table class="w3-table w3-bordered w3-margin-top-48">
+      <each loop="value, key in skills">
+        <tr>
+          <td class="w3-large w3-bolder">{{ key }}</td>
+          <td class="w3-right-align">
+            <each loop="v in value">
+              <span class="w3-large w3-tag w3-round w3-dark-grey w3-hover-black" style="margin-top: 2px;">{{ v }}</span>
+            </each>
+          </td>
+        </tr>
+      </each>
+    </table>
+  </div>
+</div>
