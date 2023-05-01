@@ -1,3 +1,5 @@
+let webpack = require('webpack');
+
 module.exports = {
   entry: './src/js/main.js',
   output: {
@@ -16,7 +18,13 @@ module.exports = {
         options: {
           presets: ['@babel/preset-env']
         }
-      }
+      },
     }]
-  }
+  },
+  plugins: [
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
+    })
+  ]
 }
