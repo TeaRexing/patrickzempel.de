@@ -1,13 +1,9 @@
-import $ from 'jquery';
 import 'cookie-notice';
-import { logToConsole as log } from './_modules';
+
+import { logToConsole as log } from './pzjs/_modules';
 
 // global constants
-export const debug = true;
-
-/*
-* #TODO: import module with variables 
-*/
+export const debug = false;
 
 // document.ready
 $(function() {
@@ -24,4 +20,5 @@ $(function() {
   $('#hero-image').click(function() {
     $('#hero-modal').toggleClass('w3-show');
   });
+
 });
