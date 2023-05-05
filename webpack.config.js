@@ -4,7 +4,8 @@ module.exports = {
   entry: './src/js/main.js',
   output: {
     path: __dirname + '/public_html',
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    library: 'pzLib',
   },
   resolve: {
     symlinks: true
