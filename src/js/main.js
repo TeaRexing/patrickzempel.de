@@ -1,14 +1,21 @@
+// vendor imports
+import $ from 'jquery';
 import 'cookie-notice';
 
+// own imports
 import { logToConsole as log } from './pzjs/_modules';
 
 // global constants
-export const debug = false;
+export const debug = true;
+
+// make functions globally availabe in page
+export { $, log };
 
 // document.ready
 $(function() {
   debug ? log('=== Debug-Mode ===') : null;
 
+  // Attachments
   // attach the nav toggle function
   $('.toggleNav').click(function() {
     $('#mobileNav').toggleClass('w3-hide');
