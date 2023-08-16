@@ -1,12 +1,12 @@
 // vendor imports
-import $ from 'jquery';
+import $, { each } from 'jquery';
 import 'cookie-notice';
 
 // own imports
 import { logToConsole as log } from './pzjs/_modules';
 
 // global constants
-export const debug = true;
+export const debug = false;
 
 // make functions globally availabe in page
 export { $, log };
@@ -28,4 +28,10 @@ $(function() {
     $('#hero-modal').toggleClass('w3-show');
   });
 
+  /*
+  // attach the scroll handler
+  $(window).on('scroll', function() {
+    log('Scrolling...');
+  });
+  */
 });
