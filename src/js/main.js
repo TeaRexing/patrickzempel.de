@@ -3,18 +3,15 @@ import $, { each } from 'jquery';
 import 'cookie-notice';
 
 // own imports
-import { logToConsole as log } from './pzjs/_modules';
 
 // global constants
 export const debug = false;
 
 // make functions globally availabe in page
-export { $, log };
+export { $ };
 
 // document.ready
 $(function() {
-  debug ? log('=== Debug-Mode ===') : null;
-
   // Attachments
   // attach the nav toggle function
   $('.toggleNav').click(function() {

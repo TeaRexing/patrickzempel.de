@@ -11,14 +11,14 @@
 // this could be a problem on github - just comment it!
 // for my sass files check: https://github.com/TeaRexing/pzcss
 //
-@use './pz.css/src/main.scss' with (
+@use './w3scss/src/main.scss' with (
   $base-font: "Roboto Condensed",
   $heading-font: "Roboto Condensed",
 );
 
 @use './timeline';
 
-@import './pz.css/src/_mixins';
+@import './w3scss/src/_mixins';
 
 // Google Fonts
 // Roboto Condensed Light 300
