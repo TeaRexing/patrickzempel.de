@@ -3,6 +3,7 @@ import $, { each } from 'jquery';
 import 'cookie-notice';
 
 // own imports
+// ... nothing to see here
 
 // global constants
 export const debug = false;
