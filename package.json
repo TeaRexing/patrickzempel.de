@@ -23,7 +23,8 @@
     "watch": "run-p build:* && run-p serve watch:*",
     "build": "run-p build:*",
     "production": "npm run purge && run-p build:* && npm run css:purify",
-    "purge": "rimraf public_html/"
+    "purge": "rimraf public_html/",
+    "publish": "./sync.sh"
   },
   "keywords": [],
   "author": "Patrick Zempel",
