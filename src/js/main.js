@@ -1,9 +1,12 @@
 // vendor imports
 import $, { each } from 'jquery';
 import 'cookie-notice';
+import GLightbox from 'glightbox';
 
 // own imports
 // ... nothing to see here
+//
+const lightbox = GLightbox();
 
 // global constants
 export const debug = false;
