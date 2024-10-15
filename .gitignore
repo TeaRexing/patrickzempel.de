@@ -4,3 +4,5 @@ public_html/
 *pz.css*
 */fonts/*
 sync.sh
+archiv/
+*.bak
