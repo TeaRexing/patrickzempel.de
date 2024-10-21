@@ -6,7 +6,10 @@ import GLightbox from 'glightbox';
 // own imports
 // ... nothing to see here
 //
+//
+/* here unused
 const lightbox = GLightbox();
+*/
 
 // global constants
 export const debug = false;
