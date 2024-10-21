@@ -17,6 +17,20 @@ export const debug = false;
 // make functions globally availabe in page
 export { $ };
 
+  let cn = new cookieNoticeJS({
+    'cookieNoticePosition': 'bottom',
+    'learnMoreLinkEnable': true,
+    'learnMoreLinkHref': '/datenschutz.html',
+    'learnMoreLinkText': 'Mehr erfahren...',
+    'buttonBgColor': '#000',
+    'buttonTextColor': '#fff',
+    'noticeBgColor': '#4d4d4d',
+    'noticeTextColor': '#fff',
+    'linkColor': '#fff',
+    'linkTarget': '_blank'
+  });
+
+
 // document.ready
 $(function() {
   // Attachments
