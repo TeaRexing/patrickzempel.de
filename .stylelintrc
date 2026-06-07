@@ -1,5 +1,4 @@
 "rules": {
     "block-no-empty": true,
-    "color-no-invalid-hex": true,
-    "max-empty-lines": 2
+    "color-no-invalid-hex": true
 }
