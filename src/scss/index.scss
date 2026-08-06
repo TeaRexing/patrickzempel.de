@@ -16,9 +16,10 @@
   $heading-font: "Roboto Condensed",
 );
 
+@use './w3scss/src/_mixins.scss';
+
 @use './timeline';
 
-@import './w3scss/src/_mixins';
 
 // Google Fonts
 // Roboto Condensed Light 300
@@ -84,5 +85,5 @@ body, html {
 .navbar-link {
   color: #999;
   text-decoration: none;
-  @include animate-outline(5px, 1.5, 0.1s, #999);
+  @include mixins.animate-outline(5px, 1.5, 0.1s, #999);
 }
