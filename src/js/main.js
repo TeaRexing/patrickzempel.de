@@ -1,15 +1,10 @@
 // vendor imports
 import $, { each } from 'jquery';
-import 'cookie-notice';
-import GLightbox from 'glightbox';
+import { initCookieConsent } from './_cookie.js';
 
 // own imports
 // ... nothing to see here
 //
-//
-/* here unused
-const lightbox = GLightbox();
-*/
 
 // global constants
 export const debug = false;
@@ -17,19 +12,8 @@ export const debug = false;
 // make functions globally availabe in page
 export { $ };
 
-  let cn = new cookieNoticeJS({
-    'cookieNoticePosition': 'bottom',
-    'learnMoreLinkEnable': true,
-    'learnMoreLinkHref': '/datenschutz.html',
-    'learnMoreLinkText': 'Mehr erfahren...',
-    'buttonBgColor': '#000',
-    'buttonTextColor': '#fff',
-    'noticeBgColor': '#4d4d4d',
-    'noticeTextColor': '#fff',
-    'linkColor': '#fff',
-    'linkTarget': '_blank'
-  });
-
+// load cookie consent
+initCookieConsent();
 
 // document.ready
 $(function() {
@@ -46,10 +30,4 @@ $(function() {
     $('#hero-modal').toggleClass('w3-show');
   });
 
-  /*
-  // attach the scroll handler
-  $(window).on('scroll', function() {
-    log('Scrolling...');
-  });
-  */
 });
